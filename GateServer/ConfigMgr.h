@@ -17,6 +17,7 @@ struct SectionInfo {
 		}
 
 		this->_section_datas = src._section_datas;
+		return *this;
 	}
 
 	std::map<std::string, std::string> _section_datas;
@@ -37,8 +38,6 @@ public:
 		_config_map.clear();
 	}
 
-	ConfigMgr();
-
 	SectionInfo operator[](const std::string& section) {
 		if (_config_map.find(section) == _config_map.end()) {
 			return SectionInfo();
@@ -46,20 +45,17 @@ public:
 		return _config_map[section];
 	}
 
-
-	ConfigMgr& operator=(const ConfigMgr& src) {
-		if (&src == this) {
-			return *this;
-		}
-
-		this->_config_map = src._config_map;
-	};
-
-	ConfigMgr(const ConfigMgr& src) {
-		this->_config_map = src._config_map;
+	static ConfigMgr& Inst() {
+		//cfg_mgr生命周期和进程同步，仅作一次初始化，其他线程访问时都共用一份，且保证线程安全
+		static ConfigMgr cfg_mgr;
+		return cfg_mgr;
 	}
 
+	ConfigMgr& operator=(const ConfigMgr& src) = delete;
+	ConfigMgr(const ConfigMgr& src) = delete;
+
 private:
+	ConfigMgr();
 	// 存储section和key-value对的map  
 	std::map<std::string, SectionInfo> _config_map;
 };
