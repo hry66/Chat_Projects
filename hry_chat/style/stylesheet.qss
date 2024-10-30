@@ -53,6 +53,7 @@ background-color:rgb(255,255,255)
     color:green;
 }
 
+
 #forget_label[state='normal'],#forget_label[state='selected']{
     color:black;
 }
