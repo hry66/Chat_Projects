@@ -31,6 +31,7 @@ enum ReqId{
 enum Modules{
     REGISTERMOD=0,
     RESETMOD=1,
+    LOGINMOD=2,
 };
 
 enum ErrorCodes{
@@ -54,6 +55,71 @@ enum TipErr{
 enum ClickLbState{
     Normal = 0,
     Selected = 1
+};
+
+struct ServerInfo{
+    QString Host;
+    QString Port;
+    QString Token;
+    int Uid;
+};
+
+enum ChatUIMode{
+    SearchMode,// 搜索
+    ChatMode,// 聊天
+    ContactMode,// 联系
+};
+
+enum ListItemType{
+    CHAT_USER_ITEM,
+    CONTACT_USER_ITEM,
+    SEARCH_USER_ITEM,
+    ADD_USER_TIP_ITEM,
+    INVALID_ITEM,
+    GROUP_TIP_ITEM,
+    APPLY_FRIEND_ITEM,
+    LINE_ITEM,
+};
+
+enum class ChatRole
+{
+    Self,
+    Other,
+};
+
+struct MsgInfo{
+    QString msgFlag;//"text,image,file"
+    QString content;//表示文件和图像的url
+    QPixmap pixmap;//文件和图片的缩略图
+};
+
+// 申请好友界面相关
+const int MIN_APPLY_LABEL_ED_LEN = 40;
+const QString add_prefix = "添加标签 ";
+const int  tip_offset = 5;
+
+// 模拟数据
+const std::vector<QString>  strs ={"全体目光向我看齐",
+                             "你太baby啦",
+                             "装逼让你飞起来！",
+                            "我尼玛，爱嫂子",
+                            "双击666！"};
+const std::vector<QString> heads = {
+    ":/res/head_1.jpg",
+    ":/res/head_2.jpg",
+    ":/res/head_3.jpg",
+    ":/res/head_4.jpg",
+    ":/res/head_5.jpg"
+};
+const std::vector<QString> names = {
+    "llfc",
+    "zack",
+    "golang",
+    "cpp",
+    "java",
+    "nodejs",
+    "python",
+    "rust"
 };
 
 #endif // GLOBAL_H
