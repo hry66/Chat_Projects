@@ -6,7 +6,8 @@
 
 FindSuccessDlg::FindSuccessDlg(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::FindSuccessDlg)
+    ui(new Ui::FindSuccessDlg),
+    _parent(parent)
 {
     ui->setupUi(this);
 
