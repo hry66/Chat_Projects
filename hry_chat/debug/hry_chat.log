@@ -1345,7 +1345,7 @@
        正在使用项目“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“GetNativeManifest”重写项目“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“GetNativeManifest”。
        正在使用项目“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets”中的目标“GetTargetPathWithTargetPlatformMoniker”重写项目“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“GetTargetPathWithTargetPlatformMoniker”。
        正在使用项目“C:\Users\hry\AppData\Local\QtMsBuild\uic\qtuic.targets”中的目标“QtUicClean”重写项目“C:\Users\hry\AppData\Local\QtMsBuild\repc\qtrepc.targets”中的目标“QtUicClean”。
-生成启动时间为 2024/12/10 20:56:25。
+生成启动时间为 2024/12/10 21:51:18。
 日志记录详细程度设置为: Detailed。     1>项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”在节点 2 上(Build 个目标)。
      1>由于条件的计算结果为 false，已跳过目标“EnableIntermediateOutputPathMismatchWarning”；('$(RestoreProjectStyle)' == 'PackageReference')的计算结果为('' == 'PackageReference')。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets”中的目标“_CheckForInvalidConfigurationAndPlatform”(目标“SetTelemetryEnvironmentVariables”依赖于它):
@@ -1368,10 +1368,10 @@
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets”中的目标“SetTelemetryEnvironmentVariables”(目标“Build”依赖于它):
        正在使用程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll”中的“SetEnv”任务。
        任务“SetEnv”
-         VSTEL_SolutionSessionID={D98F75F2-D9BA-4127-AC9D-D0C5C503D2B7}
+         VSTEL_SolutionSessionID={56AD48AE-02B4-44FB-81C6-A84002D3F222}
        已完成执行任务“SetEnv”的操作。
        任务“SetEnv”
-         VSTEL_CurrentSolutionBuildID=1257685739
+         VSTEL_CurrentSolutionBuildID=4114951905
        已完成执行任务“SetEnv”的操作。
        任务“SetEnv”
          VSTEL_SolutionPath=D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.sln
@@ -1550,6 +1550,7 @@
        已完成执行任务“WriteLinesToFile”的操作。
        正在使用程序集“Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Touch”任务。
        任务“Touch”
+         正在创建“debug\hry_chat.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
          正在对“debug\hry_chat.tlog\unsuccessfulbuild”执行 Touch 任务。
        已完成执行任务“Touch”的操作。
      1>已完成在项目“hry_chat.vcxproj”中生成目标“InitializeBuildStatus”的操作。
@@ -1584,10 +1585,10 @@
        任务“GetOutOfDateItems”
        已完成执行任务“GetOutOfDateItems”的操作。
        任务“GetOutOfDateItems”
-         使用从以下项生成的缓存输出依赖关系表:
-         	D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog\CustomBuild.write.1.tlog
-         使用从以下项生成的缓存输入依赖关系表:
-         	D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog\CustomBuild.read.1.tlog
+         写入跟踪日志:
+         	debug\hry_chat.tlog\CustomBuild.write.1.tlog
+         读取跟踪日志:
+         	debug\hry_chat.tlog\CustomBuild.read.1.tlog
          D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PREDEFS.H.CBT 的输出:
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PREDEFS.H
          所有输出均为最新。
@@ -1822,90 +1823,11 @@
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtQmlStaticGenerateImportFile”的操作。
        由于条件的计算结果为 false，已跳过目标“ResolveHost”；('$(ApplicationType)' == 'Linux' AND '$(PlatformToolset)' != 'WSL_1_0')的计算结果为('' == 'Linux' AND 'v143' != 'WSL_1_0')。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\qt_vars.targets”中的目标“QtVars”(目标“QtVarsLoad”依赖于它):
-       正在完全生成目标“QtVars”。
-       输入文件“hry_chat.vcxproj”比输出文件“D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\\qtvars.xml”新。
-       由于 false 条件，已跳过任务“Error”；('$(QtToolsPath)' == '')计算为('D:/Qt5/5.12.8/msvc2017_64/bin' == '')。
-       由于 false 条件，已跳过任务“Error”；('$(ApplicationType)' != 'Linux'
-               AND !Exists('$(QtToolsPath)\qmake.exe')
-               AND !Exists('$(QtToolsPath)\qmake.bat'))计算为('' != 'Linux'
-               AND !Exists('D:/Qt5/5.12.8/msvc2017_64/bin\qmake.exe')
-               AND !Exists('D:/Qt5/5.12.8/msvc2017_64/bin\qmake.bat'))。
-       正在使用程序集“Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Exec”任务。
-       任务“Exec”
-         WHERE /Q cl.exe
-       已完成执行任务“Exec”的操作。
-       由于 false 条件，已跳过任务“SetEnv”；('$(ApplicationType)' != 'Linux' AND '$(ErrorLevel)' != '0')计算为('' != 'Linux' AND '0' != '0')。
-       任务“MakeDir”
-       已完成执行任务“MakeDir”的操作。
-       正在从程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Build.Tasks.Core.dll”初始化任务工厂“CodeTaskFactory”。
-       正在使用来自任务工厂“Code Task Factory”的“HostTranslatePaths”任务。
-       任务“HostTranslatePaths”
-       已完成执行任务“HostTranslatePaths”的操作。
-       正在从程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Build.Tasks.Core.dll”初始化任务工厂“CodeTaskFactory”。
-       正在使用来自任务工厂“Code Task Factory”的“HostExec”任务。
-       任务“HostExec”
-         
-         ==== HostExec: Microsoft.Build.Tasks.Exec
-         WorkingDirectory: D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qmake
-         Command: ("D:/Qt5/5.12.8/msvc2017_64/bin/qmake" -query) 1> props.txt
-         ("D:/Qt5/5.12.8/msvc2017_64/bin/qmake" -query) 1> props.txt
-         == OK ExitCode: 0
-         
-       已完成执行任务“HostExec”的操作。
-       任务“ReadLinesFromFile”
-       已完成执行任务“ReadLinesFromFile”的操作。
-       任务“Message”
-         Reading Qt configuration (D:/Qt5/5.12.8/msvc2017_64/bin/qmake)
-       已完成执行任务“Message”的操作。
-       由于 false 条件，已跳过任务“WriteLinesToFile”；($(QtModules.Contains('quick')))计算为(False)。
-       任务“WriteLinesToFile”
-       已完成执行任务“WriteLinesToFile”的操作。
-       任务“WriteLinesToFile”
-       已完成执行任务“WriteLinesToFile”的操作。
-       由于 false 条件，已跳过任务“HostExec”；('$(ApplicationType)' == 'Linux')计算为('' == 'Linux')。
-       任务“HostExec”
-         
-         ==== HostExec: Microsoft.Build.Tasks.Exec
-         WorkingDirectory: D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qmake
-         Command: ("D:/Qt5/5.12.8/msvc2017_64/bin/qmake"  -tp vc "CONFIG -= debug release debug_and_release" "CONFIG += debug warn_off"  qtvars.pro) 1> qtvars.log 2>&1
-         ("D:/Qt5/5.12.8/msvc2017_64/bin/qmake"  -tp vc "CONFIG -= debug release debug_and_release" "CONFIG += debug warn_off"  qtvars.pro) 1> qtvars.log 2>&1
-         == OK ExitCode: 0
-         
-       已完成执行任务“HostExec”的操作。
-       任务“ReadLinesFromFile”
-       已完成执行任务“ReadLinesFromFile”的操作。
-       由于 false 条件，已跳过任务“Error”；('$(QMakeError)' == 'true')计算为('' == 'true')。
-       由于 false 条件，已跳过任务“Message”；('$(QMakeError)' != 'true' AND '$(QtVarsDebug)' == 'true')计算为('' != 'true' AND '' == 'true')。
-       由于 false 条件，已跳过任务“ParseVarDefs”；('$(QtQMakeTemplate)' == 'app' AND '$(QtVars)' != '')计算为('vcapp' == 'app' AND 'DEFINES=/Project/ItemDefinitionGroup/ClCompile/PreprocessorDefinitions;INCLUDEPATH=/Project/ItemDefinitionGroup/ClCompile/AdditionalIncludeDirectories;STDCPP=/Project/ItemDefinitionGroup/ClCompile/LanguageStandard;RUNTIME=/Project/ItemDefinitionGroup/ClCompile/RuntimeLibrary;CL_OPTIONS=/Project/ItemDefinitionGroup/ClCompile/AdditionalOptions;LIBS=/Project/ItemDefinitionGroup/Link/AdditionalDependencies;LINK_OPTIONS=/Project/ItemDefinitionGroup/Link/AdditionalOptions' != '')。
-       由于 false 条件，已跳过任务“GetVarsFromMakefile”；('$(QtQMakeTemplate)' == 'app')计算为('vcapp' == 'app')。
-       正在从程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Build.Tasks.Core.dll”初始化任务工厂“CodeTaskFactory”。
-       正在使用来自任务工厂“Code Task Factory”的“GetVarsFromMSBuild”任务。
-       任务“GetVarsFromMSBuild”
-       已完成执行任务“GetVarsFromMSBuild”的操作。
-       任务“WriteLinesToFile”
-       已完成执行任务“WriteLinesToFile”的操作。
-       任务“WriteLinesToFile”
-       已完成执行任务“WriteLinesToFile”的操作。
-       任务“WriteLinesToFile”
-       已完成执行任务“WriteLinesToFile”的操作。
-       任务“MakeDir”
-       已完成执行任务“MakeDir”的操作。
-       正在使用程序集“Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Delete”任务。
-       任务“Delete”
-         正在删除文件“D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\\qtvars.xml”。
-       已完成执行任务“Delete”的操作。
-       正在使用程序集“Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Copy”任务。
-       任务“Copy”
-         正在将文件从“D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qmake\qtvars.xml”复制到“D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qtvars.xml”。
-       已完成执行任务“Copy”的操作。
-       任务“Delete”
-         文件“D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\\qtvars_plugin_import.cpp”不存在。正在跳过。
-       已完成执行任务“Delete”的操作。
-       由于 false 条件，已跳过任务“Copy”；('$(ErrorLevel)' == '0' AND Exists('$(QtVarsWorkDir)\qtvars_plugin_import.cpp'))计算为('0' == '0' AND Exists('D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qmake\qtvars_plugin_import.cpp'))。
-       任务“Delete”
-         文件“D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\\qtvars_qml_plugin_import.cpp”不存在。正在跳过。
-       已完成执行任务“Delete”的操作。
-       由于 false 条件，已跳过任务“Copy”；('$(ErrorLevel)' == '0' AND Exists('$(QtVarsWorkDir)\qtvars_qml_plugin_import.cpp'))计算为('0' == '0' AND Exists('D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qmake\qtvars_qml_plugin_import.cpp'))。
+       正在跳过目标“QtVars”，因为所有输出文件相对于输入文件而言都是最新的。
+       输入文件:
+           hry_chat.vcxproj
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\qmake\import.qml
+       输出文件:D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\qt\\qtvars.xml
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtVars”的操作。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\qt_vars.targets”中的目标“QtVarsLoad”(目标“QtWork”依赖于它):
        任务“MSBuild”
@@ -2196,6 +2118,8 @@
        正在使用来自任务工厂“Code Task Factory”的“Flatten”任务。
        任务“Flatten”
        已完成执行任务“Flatten”的操作。
+       正在从程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Build.Tasks.Core.dll”初始化任务工厂“CodeTaskFactory”。
+       正在使用来自任务工厂“Code Task Factory”的“HostTranslatePaths”任务。
        任务“HostTranslatePaths”
        已完成执行任务“HostTranslatePaths”的操作。
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtUic”的操作。
@@ -2489,15 +2413,60 @@
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtQmlCache”的操作。
        已跳过目标“QtQmlCache”。以前的生成已成功。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\rcc\qtrcc.targets”中的目标“QtRcc”(目标“QtWorkPrepare”依赖于它):
-       正在完全生成目标“QtRcc”。
-       输入文件“hry_chat.vcxproj”比输出文件“Debug\qrc_rc.cpp”新。
-       由于 false 条件，已跳过任务“Message”；('$(QtDebug)' == 'true')计算为('' == 'true')。
-       任务“CreateProperty”
-       已完成执行任务“CreateProperty”的操作。
-       任务“Flatten”
-       已完成执行任务“Flatten”的操作。
-       任务“HostTranslatePaths”
-       已完成执行任务“HostTranslatePaths”的操作。
+       正在跳过目标“QtRcc”，因为所有输出文件相对于输入文件而言都是最新的。
+       输入文件:
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\rc.qrc
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\ice.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\style\stylesheet.qss
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\add_friend.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\add_friend_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\add_friend_normal.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\addtip.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\arowdown.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\chat_icon.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\chat_icon_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\chat_icon_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\chat_icon_select_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\chat_icon_select_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\close_search.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\close_transparent.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\contact_list.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\contact_list_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\contact_list_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\female.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\filedir.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\filedir_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\filedir_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\head_1.jpg
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\head_2.jpg
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\head_3.jpg
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\head_4.jpg
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\head_5.jpg
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\loading.gif
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\male.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\msg_chat_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\msg_chat_normal.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\msg_chat_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\red_point.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\right_tip.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\search.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\smile.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\smile_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\smile_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\tipclose.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\unvisible.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\unvisible_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\video_chat_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\video_chat_normal.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\video_chat_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\visible.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\visible_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\voice_chat_hover.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\voice_chat_normal.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\voice_chat_press.png
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\res\mochadandan.jpg
+           hry_chat.vcxproj
+       输出文件:Debug\qrc_rc.cpp
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtRcc”的操作。
        已跳过目标“QtVarsLoad”。以前的生成已成功。
        已跳过目标“QtMocInit”。以前的生成已成功。
@@ -3301,15 +3270,11 @@
        已完成执行任务“HostTranslatePaths”的操作。
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtMoc”的操作。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\moc\qtmoc.targets”中的目标“QtMoc”(目标“QtWorkPrepare”依赖于它):
-       正在完全生成目标“QtMoc”。
-       输入文件“hry_chat.vcxproj”比输出文件“Debug\moc_findfaildlg.cpp”新。
-       由于 false 条件，已跳过任务“Message”；('$(QtDebug)' == 'true')计算为('' == 'true')。
-       任务“CreateProperty”
-       已完成执行任务“CreateProperty”的操作。
-       任务“Flatten”
-       已完成执行任务“Flatten”的操作。
-       任务“HostTranslatePaths”
-       已完成执行任务“HostTranslatePaths”的操作。
+       正在跳过目标“QtMoc”，因为所有输出文件相对于输入文件而言都是最新的。
+       输入文件:
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\findfaildlg.h
+           hry_chat.vcxproj
+       输出文件:Debug\moc_findfaildlg.cpp
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtMoc”的操作。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\moc\qtmoc.targets”中的目标“QtMoc”(目标“QtWorkPrepare”依赖于它):
        正在完全生成目标“QtMoc”。
@@ -3444,15 +3409,11 @@
        已完成执行任务“HostTranslatePaths”的操作。
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtMoc”的操作。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\moc\qtmoc.targets”中的目标“QtMoc”(目标“QtWorkPrepare”依赖于它):
-       正在完全生成目标“QtMoc”。
-       输入文件“hry_chat.vcxproj”比输出文件“Debug\moc_tcpmgr.cpp”新。
-       由于 false 条件，已跳过任务“Message”；('$(QtDebug)' == 'true')计算为('' == 'true')。
-       任务“CreateProperty”
-       已完成执行任务“CreateProperty”的操作。
-       任务“Flatten”
-       已完成执行任务“Flatten”的操作。
-       任务“HostTranslatePaths”
-       已完成执行任务“HostTranslatePaths”的操作。
+       正在跳过目标“QtMoc”，因为所有输出文件相对于输入文件而言都是最新的。
+       输入文件:
+           D:\CPPstudy\lianlianfengchen-copy\hry_chat\tcpmgr.h
+           hry_chat.vcxproj
+       输出文件:Debug\moc_tcpmgr.cpp
      1>已完成在项目“hry_chat.vcxproj”中生成目标“QtMoc”的操作。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“C:\Users\hry\AppData\Local\QtMsBuild\moc\qtmoc.targets”中的目标“QtMoc”(目标“QtWorkPrepare”依赖于它):
        正在完全生成目标“QtMoc”。
@@ -4377,6 +4338,7 @@
        正在从程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Build.Tasks.Core.dll”初始化任务工厂“CodeTaskFactory”。
        正在使用来自任务工厂“Code Task Factory”的“QtRunTask”任务。
        任务“QtRunTask”
+         程序集加载期间 TaskRun (InlineCode.QtRunTask): Microsoft.Build.CPPTasks.Common, Version=17.7.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (位置: D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\\Microsoft.Build.CPPTasks.Common.dll, MVID: 017674b5-a680-4835-85d1-4d5aa4f87814, AppDomain: [Default])
        已完成执行任务“QtRunTask”的操作。
        任务“Flatten”
        已完成执行任务“Flatten”的操作。
@@ -4648,8 +4610,8 @@
        由于 false 条件，已跳过任务“CL”；('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true')计算为('NotUsing' == 'Create' and '' == '' and 'false' != 'true')。
        正在使用程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll”中的“CL”任务。
        任务“CL”
-         使用从以下项生成的缓存输入依赖关系表:
-         	D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog\CL.read.1.tlog
+         读取跟踪日志:
+         	debug\hry_chat.tlog\CL.read.1.tlog
          D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\ADDUSERITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIEND.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIENDITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIENDLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIENDPAGE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\BUBBLEFRAME.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CHATDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CHATITEMBASE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CHATPAGE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CHATUSERLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CHATUSERWID.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CHATVIEW.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CLICKEDBTN.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CLICKEDLABEL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CLICKEDONCELABEL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CONTACTUSERLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CONUSERITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CUSTOMIZEEDIT.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDFAILDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDSUCCESSDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FRIENDLABEL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\GLOBAL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\GROUPTIPITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\HTTPMGR.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\LISTITEMBASE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\LOADINGDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\LOGINDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\MAIN.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\MAINWINDOW.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\MESSAGETEXTEDIT.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\PICTUREBUBBLE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\REGISTERDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\RESETDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\SEARCHLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\STATEWIDGET.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TEXTBUBBLE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TIMERBTN.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\USERDATA.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\USERMGR.CPP 的输出:
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\ADDUSERITEM.OBJ
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIEND.OBJ
@@ -4691,28 +4653,57 @@
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TIMERBTN.OBJ
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERDATA.OBJ
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERMGR.OBJ
-         将编译 findfaildlg.cpp，因为未能在跟踪日志中找到它。
-         D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDFAILDLG.CPP 的输出:
-         	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDFAILDLG.OBJ
+         将编译 applyfriend.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.H。
+         将编译 applyfriendpage.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.H。
+         将编译 contactuserlist.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.H。
+         将编译 findfaildlg.cpp，因为在 2024/12/10 21:41:08 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\findfaildlg.cpp。
+         将编译 findsuccessdlg.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\findsuccessdlg.cpp。
+         将编译 logindialog.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\logindialog.cpp。
+         将编译 mainwindow.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.H。
+         将编译 searchlist.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\searchlist.cpp。
+         将编译 tcpmgr.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\tcpmgr.cpp。
+         将编译 userdata.cpp，因为在 2024/12/10 21:43:59 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\userdata.cpp。
+         在跟踪日志中未找到 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIEND.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIENDPAGE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CONTACTUSERLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDFAILDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDSUCCESSDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\LOGINDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\MAINWINDOW.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\SEARCHLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\USERDATA.CPP 的输出；需要编译源。
          写入跟踪日志:
          	debug\hry_chat.tlog\CL.write.1.tlog
          传递给工具的环境变量为:
-           VS_UNICODE_OUTPUT=3120
-         D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 findfaildlg.cpp
+           VS_UNICODE_OUTPUT=2772
+         D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 applyfriend.cpp applyfriendpage.cpp contactuserlist.cpp findfaildlg.cpp findsuccessdlg.cpp logindialog.cpp mainwindow.cpp searchlist.cpp tcpmgr.cpp userdata.cpp
          跟踪命令:
-         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDFAILDLG.CPP /b MSBuildConsole_CancelEventeb6f8064bdad4b668d00cbac9450a0bf  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 findfaildlg.cpp
+         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r "D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIEND.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\APPLYFRIENDPAGE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\CONTACTUSERLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDFAILDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\FINDSUCCESSDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\LOGINDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\MAINWINDOW.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\SEARCHLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\TCPMGR.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\USERDATA.CPP" /b MSBuildConsole_CancelEventecc9bbd573974e9eaecb96fb9d44f7a5  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 applyfriend.cpp applyfriendpage.cpp contactuserlist.cpp findfaildlg.cpp findsuccessdlg.cpp logindialog.cpp mainwindow.cpp searchlist.cpp tcpmgr.cpp userdata.cpp
+         applyfriend.cpp
+         applyfriendpage.cpp
+         contactuserlist.cpp
          findfaildlg.cpp
+         findsuccessdlg.cpp
+         logindialog.cpp
+         mainwindow.cpp
+         searchlist.cpp
+         tcpmgr.cpp
+         userdata.cpp
+     1>D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriend.cpp(97,105): warning C4100: “text_height”: 未引用的形参
+     1>D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriendpage.cpp(49,47): warning C4100: “event”: 未引用的形参
        已完成执行任务“CL”的操作。
        任务“CL”
          读取跟踪日志:
          	debug\hry_chat.tlog\CL.read.1.tlog
          D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.CPP 的输出:
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ
-         所有输出均为最新。
+         将编译 Debug\qrc_rc.cpp，因为在 2024/12/10 21:49:14 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\qrc_rc.cpp。
+         D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.CPP 的输出:
+         	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ
+         写入跟踪日志:
+         	debug\hry_chat.tlog\CL.write.1.tlog
+         传递给工具的环境变量为:
+           VS_UNICODE_OUTPUT=2860
+         D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /wd4711 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 Debug\qrc_rc.cpp
+         跟踪命令:
+         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.CPP /b MSBuildConsole_CancelEvent190cbb9b8307436580f8e31dfc909253  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /wd4711 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 Debug\qrc_rc.cpp
+         qrc_rc.cpp
        已完成执行任务“CL”的操作。
        任务“CL”
-         使用从以下项生成的缓存输入依赖关系表:
-         	D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog\CL.read.1.tlog
+         读取跟踪日志:
+         	debug\hry_chat.tlog\CL.read.1.tlog
          D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDPAGE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_BUBBLEFRAME.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATITEMBASE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATPAGE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERWID.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATVIEW.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDBTN.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDLABEL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDONCELABEL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONTACTUSERLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONUSERITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CUSTOMIZEEDIT.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDSUCCESSDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FRIENDLABEL.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_GROUPTIPITEM.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_HTTPMGR.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LISTITEMBASE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOADINGDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOGINDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MAINWINDOW.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MESSAGETEXTEDIT.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PICTUREBUBBLE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_REGISTERDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_RESETDIALOG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_SEARCHLIST.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_STATEWIDGET.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.CPP 的输出:
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.OBJ
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.OBJ
@@ -4750,17 +4741,18 @@
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.OBJ
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.OBJ
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.OBJ
-         将编译 Debug\moc_findfaildlg.cpp，因为未能在跟踪日志中找到它。
-         D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.CPP 的输出:
-         	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.OBJ
+         将编译 Debug\moc_findfaildlg.cpp，因为在 2024/12/10 21:49:14 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_findfaildlg.cpp。
+         将编译 Debug\moc_tcpmgr.cpp，因为在 2024/12/10 21:49:14 处修改了 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_tcpmgr.cpp。
+         在跟踪日志中未找到 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.CPP 的输出；需要编译源。
          写入跟踪日志:
          	debug\hry_chat.tlog\CL.write.1.tlog
          传递给工具的环境变量为:
-           VS_UNICODE_OUTPUT=2448
-         D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458  -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 Debug\moc_findfaildlg.cpp
+           VS_UNICODE_OUTPUT=2860
+         D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458  -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 Debug\moc_findfaildlg.cpp Debug\moc_tcpmgr.cpp
          跟踪命令:
-         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.CPP /b MSBuildConsole_CancelEvent26eb462b88a048ffb8631afa495f7bf0  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458  -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 Debug\moc_findfaildlg.cpp
+         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r "D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.CPP|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.CPP" /b MSBuildConsole_CancelEventd5fb016fb0ce4b9d83f752aabbd428cb  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\CL.exe"  /c /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /IGeneratedFiles\Debug /IGeneratedFiles /I. /Idebug /I/include /Zi /nologo /W3 /WX- /diagnostics:column /MP /Od /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc143.pdb" /external:W3 /Gd /TP /wd4819 /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458  -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus /utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 Debug\moc_findfaildlg.cpp Debug\moc_tcpmgr.cpp
          moc_findfaildlg.cpp
+         moc_tcpmgr.cpp
        已完成执行任务“CL”的操作。
      1>已完成在项目“hry_chat.vcxproj”中生成目标“ClCompile”的操作。
        由于条件的计算结果为 false，已跳过目标“RunSelectedFileNativeCodeAnalysis”；('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='')的计算结果为('false'=='true' and ''!='')。
@@ -4786,13 +4778,16 @@
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets”中的目标“ResourceCompile”(目标“_ResourceCompile”依赖于它):
        正在使用程序集“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Build.CppTasks.Common.dll”中的“RC”任务。
        任务“RC”
-         使用从以下项生成的缓存输出依赖关系表:
-         	D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog\rc.write.1.tlog
-         使用从以下项生成的缓存输入依赖关系表:
-         	D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog\rc.read.1.tlog
+         写入跟踪日志:
+         	debug\hry_chat.tlog\rc.write.1.tlog
+         读取跟踪日志:
+         	debug\hry_chat.tlog\rc.read.1.tlog
          D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\HRY_CHAT_RESOURCE.RC 的输出:
          	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HRY_CHAT_RESOURCE.RES
-         所有输出均为最新。
+         将编译 .\hry_chat_resource.rc，因为在 2024/12/10 21:43:59 处修改了 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\HRY_CHAT_RESOURCE.RC。
+         D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D _DEBUG /l"0x0409" /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /nologo /fo"debug\hry_chat_resource.res" .\hry_chat_resource.rc 
+         跟踪命令:
+         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\HRY_CHAT_RESOURCE.RC /b MSBuildConsole_CancelEvent10c28df17fb0420ca59c4c4fc671efbf  /c "D:\Windows Kits\10\bin\10.0.22621.0\x64\rc.exe"  /D _WINDOWS /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_NETWORK_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D _DEBUG /l"0x0409" /IDebug /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat" /ID:\Qt5\5.12.8\msvc2017_64\include /ID:\Qt5\5.12.8\msvc2017_64\include\QtNetwork /ID:\Qt5\5.12.8\msvc2017_64\include\QtWidgets /ID:\Qt5\5.12.8\msvc2017_64\include\QtGui /ID:\Qt5\5.12.8\msvc2017_64\include\QtANGLE /ID:\Qt5\5.12.8\msvc2017_64\include\QtCore /I"D:\Qt5\5.12.8\msvc2017_64\mkspecs\win32-msvc" /I"D:\CPPstudy\lianlianfengchen-copy\hry_chat\\" /nologo /fo"debug\hry_chat_resource.res" .\hry_chat_resource.rc 
        已完成执行任务“RC”的操作。
      1>已完成在项目“hry_chat.vcxproj”中生成目标“ResourceCompile”的操作。
      1>来自项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”的文件“D:\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets”中的目标“AfterResourceCompile”(目标“_ResourceCompile”依赖于它):
@@ -4915,30 +4910,16 @@
        任务“Link”
          写入跟踪日志:
          	debug\hry_chat.tlog\link.write.1.tlog
-         	debug\hry_chat.tlog\link.38616-cvtres.write.1.tlog
-         	debug\hry_chat.tlog\link.38616-rc.write.1.tlog
-         	debug\hry_chat.tlog\link.38616.write.1.tlog
-         	debug\hry_chat.tlog\link-cvtres.write.1.tlog
-         	debug\hry_chat.tlog\link-rc.write.1.tlog
          读取跟踪日志:
          	debug\hry_chat.tlog\link.read.1.tlog
-         	debug\hry_chat.tlog\link.read.2.tlog
-         	debug\hry_chat.tlog\link.read.3.tlog
-         	debug\hry_chat.tlog\link.read.4.tlog
-         	debug\hry_chat.tlog\link.read.5.tlog
-         	debug\hry_chat.tlog\link.38616-cvtres.read.1.tlog
-         	debug\hry_chat.tlog\link.38616-rc.read.1.tlog
-         	debug\hry_chat.tlog\link.38616.read.1.tlog
-         	debug\hry_chat.tlog\link.38616.read.2.tlog
-         	debug\hry_chat.tlog\link.38616.read.3.tlog
-         	debug\hry_chat.tlog\link.38616.read.4.tlog
-         	debug\hry_chat.tlog\link.38616.read.5.tlog
-         	debug\hry_chat.tlog\link-cvtres.read.1.tlog
-         	debug\hry_chat.tlog\link-rc.read.1.tlog
-         在跟踪日志中未找到 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GLOBAL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HRY_CHAT_RESOURCE.RES|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAIN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TIMERBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERDATA.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERMGR.OBJ 的输出；需要编译源。
-         在跟踪日志中未找到输出 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GLOBAL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HRY_CHAT_RESOURCE.RES|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAIN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TIMERBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERDATA.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERMGR.OBJ 的依赖项；需要编译源。
+         D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GLOBAL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HRY_CHAT_RESOURCE.RES|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAIN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TIMERBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERDATA.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERMGR.OBJ 的输出:
+         	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\BIN\HRY_CHAT.ILK
+         	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\BIN\HRY_CHAT.EXE
+         	D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\BIN\HRY_CHAT.PDB
+         出于性能原因，未记录输入详细信息(其中的 105 条)。
+         需要编译源: 输入 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QT.NATVIS 比输出 D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\BIN\HRY_CHAT.EXE 新。
          传递给工具的环境变量为:
-           VS_UNICODE_OUTPUT=3120
+           VS_UNICODE_OUTPUT=888
          D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"bin\\hry_chat.exe" /NOLOGO /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Networkd.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Widgetsd.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Guid.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Cored.lib D:\Qt5\5.12.8\msvc2017_64\lib\qtmaind.lib shell32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\hry_chat.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 /NATVIS:"debug\qt.natvis" "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /NATVIS:"debug\\qt.natvis" debug\hry_chat_resource.res
          debug\adduseritem.obj
          debug\applyfriend.obj
@@ -5018,7 +4999,7 @@
          debug\moc_textbubble.obj
          debug\moc_usermgr.obj
          跟踪命令:
-         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r "D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GLOBAL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HRY_CHAT_RESOURCE.RES|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAIN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TIMERBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERDATA.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERMGR.OBJ" /b MSBuildConsole_CancelEventd293a5597e574b63b756b3920c99aed5  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"bin\\hry_chat.exe" /NOLOGO /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Networkd.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Widgetsd.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Guid.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Cored.lib D:\Qt5\5.12.8\msvc2017_64\lib\qtmaind.lib shell32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\hry_chat.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 /NATVIS:"debug\qt.natvis" "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /NATVIS:"debug\\qt.natvis" debug\hry_chat_resource.res
+         D:\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\hry_chat.tlog /r "D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GLOBAL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HRY_CHAT_RESOURCE.RES|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAIN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_ADDUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIEND.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_APPLYFRIENDPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_BUBBLEFRAME.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATPAGE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATUSERWID.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CHATVIEW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CLICKEDONCELABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONTACTUSERLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CONUSERITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_CUSTOMIZEEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDFAILDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FINDSUCCESSDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_FRIENDLABEL.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_GROUPTIPITEM.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_HTTPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LISTITEMBASE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOADINGDLG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_LOGINDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MAINWINDOW.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_MESSAGETEXTEDIT.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\MOC_USERMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\PICTUREBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\QRC_RC.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\REGISTERDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\RESETDIALOG.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\SEARCHLIST.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\STATEWIDGET.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TCPMGR.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TEXTBUBBLE.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\TIMERBTN.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERDATA.OBJ|D:\CPPSTUDY\LIANLIANFENGCHEN-COPY\HRY_CHAT\DEBUG\USERMGR.OBJ" /b MSBuildConsole_CancelEvent24aaffaebd30423eb86e707b6cdbecc4  /c "D:\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"bin\\hry_chat.exe" /NOLOGO /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Networkd.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Widgetsd.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Guid.lib D:\Qt5\5.12.8\msvc2017_64\lib\Qt5Cored.lib D:\Qt5\5.12.8\msvc2017_64\lib\qtmaind.lib shell32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\hry_chat.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 /NATVIS:"debug\qt.natvis" "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" /NATVIS:"debug\\qt.natvis" debug\hry_chat_resource.res
          debug\adduseritem.obj
          debug\applyfriend.obj
          debug\applyfrienditem.obj
@@ -5096,6 +5077,7 @@
          debug\moc_tcpmgr.obj
          debug\moc_textbubble.obj
          debug\moc_usermgr.obj
+         LINK : 没有找到 bin\\hry_chat.exe 或上一个增量链接没有生成它；正在执行完全链接
        已完成执行任务“Link”的操作。
        任务“Message”
          hry_chat.vcxproj -> D:\CPPstudy\lianlianfengchen-copy\hry_chat\bin\hry_chat.exe
@@ -5260,6 +5242,7 @@
        任务“Message”
          copy /Y ".\config.ini" ".\.\bin"& xcopy /Y /E /I ".\static" ".\.\bin\static\"
        已完成执行任务“Message”的操作。
+       正在使用程序集“Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Exec”任务。
        任务“Exec”
          copy /Y ".\config.ini" ".\.\bin"& xcopy /Y /E /I ".\static" ".\.\bin\static\"
          :VCEnd
@@ -5303,6 +5286,7 @@
        任务“FindUnderPath”
          比较路径为“debug\”。
        已完成执行任务“FindUnderPath”的操作。
+       正在使用程序集“Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”中的“Delete”任务。
        任务“Delete”
        已完成执行任务“Delete”的操作。
        任务“RemoveDuplicates”
@@ -5330,7 +5314,13 @@
      1>已完成生成项目“D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
-    0 个警告
+
+       “D:\CPPstudy\lianlianfengchen-copy\hry_chat\hry_chat.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriend.cpp(97,105): warning C4100: “text_height”: 未引用的形参
+         D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriendpage.cpp(49,47): warning C4100: “event”: 未引用的形参
+
+    2 个警告
     0 个错误
 
-已用时间 00:00:02.98
+已用时间 00:00:05.12
