@@ -40,8 +40,8 @@ Status ChatServiceImpl::NotifyAddFriend(ServerContext* context, const AddFriendR
 	rtvalue["nick"] = request->nick();
 
 	std::string return_str = rtvalue.toStyledString();
-
 	session->Send(return_str, ID_NOTIFY_ADD_FRIEND_REQ);
+
 	return Status::OK;
 }
 

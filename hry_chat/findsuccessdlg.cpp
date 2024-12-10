@@ -5,7 +5,7 @@
 #include"applyfriend.h"
 
 FindSuccessDlg::FindSuccessDlg(QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent),_parent(parent),
     ui(new Ui::FindSuccessDlg)
 {
     ui->setupUi(this);

@@ -3,7 +3,7 @@
 #include "MysqlMgr.h"
 #include "const.h"
 #include "RedisMgr.h"
-//#include "UserMgr.h"
+#include "UserMgr.h"
 #include "ChatGrpcClient.h"
 
 using namespace std;
@@ -79,11 +79,11 @@ void LogicSystem::RegisterCallBacks() {
 	_fun_callbacks[ID_ADD_FRIEND_REQ] = std::bind(&LogicSystem::AddFriendApply, this,
 		placeholders::_1, placeholders::_2, placeholders::_3);
 
-	_fun_callbacks[ID_AUTH_FRIEND_REQ] = std::bind(&LogicSystem::AuthFriendApply, this,
-		placeholders::_1, placeholders::_2, placeholders::_3);
+	//_fun_callbacks[ID_AUTH_FRIEND_REQ] = std::bind(&LogicSystem::AuthFriendApply, this,
+	//	placeholders::_1, placeholders::_2, placeholders::_3);
 
-	_fun_callbacks[ID_TEXT_CHAT_MSG_REQ] = std::bind(&LogicSystem::DealChatTextMsg, this,
-		placeholders::_1, placeholders::_2, placeholders::_3);
+	//_fun_callbacks[ID_TEXT_CHAT_MSG_REQ] = std::bind(&LogicSystem::DealChatTextMsg, this,
+	//	placeholders::_1, placeholders::_2, placeholders::_3);
 	
 }
 
@@ -95,7 +95,7 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	auto token = root["token"].asString();
 	std::cout << "user login uid is " << uid << " user token  is "<< token << endl;
 
-	auto rsp = StatusGrpcClient::GetInstance()->Login(uid, token);
+	//auto rsp = StatusGrpcClient::GetInstance()->Login(uid, token);
 
 	Json::Value rtvalue;
 	Defer defer([this, &rtvalue, session]() {
@@ -103,64 +103,44 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 		session->Send(return_str, MSG_CHAT_LOGIN_RSP);
 	});
 
-	rtvalue["error"] = rsp.error();
-	if (rsp.error() != ErrorCodes::Success) {
+	//rtvalue["error"] = rsp.error();
+	//if (rsp.error() != ErrorCodes::Success) {
+	//	return;
+	//}
+
+	//从redis获取用户token是否正确
+	std::string uid_str = std::to_string(uid);
+	std::string token_key = USERTOKENPREFIX + uid_str;
+	std::string token_value = "";
+	bool success = RedisMgr::GetInstance()->Get(token_key, token_value);
+	if (!success) {
+		rtvalue["error"] = ErrorCodes::UidInvalid;
+		return ;
+	}
+
+	if (token_value != token) {
+		rtvalue["error"] = ErrorCodes::TokenInvalid;
+		return ;
+	}
+
+	rtvalue["error"] = ErrorCodes::Success;
+
+	std::string base_key = USER_BASE_INFO + uid_str;
+	auto user_info = std::make_shared<UserInfo>();
+	bool b_base = GetBaseInfo(base_key, uid, user_info);
+	if (!b_base) {
+		rtvalue["error"] = ErrorCodes::UidInvalid;
 		return;
 	}
 
-	//内存中查询用户信息
-	auto find_iter = _users.find(uid);
-	std::shared_ptr<UserInfo> user_info = nullptr;
-	if (find_iter == _users.end()) {
-		//查询数据库
-		user_info = MysqlMgr::GetInstance()->GetUser(uid);
-		if (user_info == nullptr) {
-			rtvalue["error"] = ErrorCodes::UidInvalid;
-			return;
-		}
-
-		_users[uid] = user_info;
-	}
-	else {
-		user_info = find_iter->second;
-	}
-
 	rtvalue["uid"] = uid;
-	rtvalue["token"] = rsp.token();
+	rtvalue["pwd"] = user_info->pwd;
 	rtvalue["name"] = user_info->name;
-
-	////从redis获取用户token是否正确
-	//std::string uid_str = std::to_string(uid);
-	//std::string token_key = USERTOKENPREFIX + uid_str;
-	//std::string token_value = "";
-	//bool success = RedisMgr::GetInstance()->Get(token_key, token_value);
-	//if (!success) {
-	//	rtvalue["error"] = ErrorCodes::UidInvalid;
-	//	return ;
-	//}
-
-	//if (token_value != token) {
-	//	rtvalue["error"] = ErrorCodes::TokenInvalid;
-	//	return ;
-	//}
-
-	//rtvalue["error"] = ErrorCodes::Success;
-
-	//std::string base_key = USER_BASE_INFO + uid_str;
-	//auto user_info = std::make_shared<UserInfo>();
-	//bool b_base = GetBaseInfo(base_key, uid, user_info);
-	//if (!b_base) {
-	//	rtvalue["error"] = ErrorCodes::UidInvalid;
-	//	return;
-	//}
-	//rtvalue["uid"] = uid;
-	//rtvalue["pwd"] = user_info->pwd;
-	//rtvalue["name"] = user_info->name;
-	//rtvalue["email"] = user_info->email;
-	//rtvalue["nick"] = user_info->nick;
-	//rtvalue["desc"] = user_info->desc;
-	//rtvalue["sex"] = user_info->sex;
-	//rtvalue["icon"] = user_info->icon;
+	rtvalue["email"] = user_info->email;
+	rtvalue["nick"] = user_info->nick;
+	rtvalue["desc"] = user_info->desc;
+	rtvalue["sex"] = user_info->sex;
+	rtvalue["icon"] = user_info->icon;
 
 	////从数据库获取申请列表
 	//std::vector<std::shared_ptr<ApplyInfo>> apply_list;
@@ -194,26 +174,29 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	//	rtvalue["friend_list"].append(obj);
 	//}
 
-	//auto server_name = ConfigMgr::Inst().GetValue("SelfServer", "Name");
-	////将登录数量增加
-	//auto rd_res = RedisMgr::GetInstance()->HGet(LOGIN_COUNT, server_name);
-	//int count = 0;
-	//if (!rd_res.empty()) {
-	//	count = std::stoi(rd_res);
-	//}
+	auto server_name = ConfigMgr::Inst().GetValue("SelfServer", "Name");
+	//将登录数量增加
+	auto rd_res = RedisMgr::GetInstance()->HGet(LOGIN_COUNT, server_name);
+	int count = 0;
+	if (!rd_res.empty()) {
+		count = std::stoi(rd_res);
+	}
+	count++;
 
-	//count++;
-	//auto count_str = std::to_string(count);
-	//RedisMgr::GetInstance()->HSet(LOGIN_COUNT, server_name, count_str);
-	////session绑定用户uid
-	//session->SetUserId(uid);
-	////为用户设置登录ip server的名字
-	//std::string  ipkey = USERIPPREFIX + uid_str;
-	//RedisMgr::GetInstance()->Set(ipkey, server_name);
-	////uid和session绑定管理,方便以后踢人操作
-	//UserMgr::GetInstance()->SetUserSession(uid, session);
+	auto count_str = std::to_string(count);
+	RedisMgr::GetInstance()->HSet(LOGIN_COUNT, server_name, count_str);
 
-	//return;
+	//session绑定用户uid
+	session->SetUserId(uid);
+
+	//为用户设置登录ip server的名字
+	std::string  ipkey = USERIPPREFIX + uid_str;
+	RedisMgr::GetInstance()->Set(ipkey, server_name);
+
+	//uid和session绑定管理,方便以后踢人操作
+	UserMgr::GetInstance()->SetUserSession(uid, session);
+
+	return;
 }
 
 void LogicSystem::SearchInfo(std::shared_ptr<CSession> session, const short& msg_id, const string& msg_data)
@@ -263,7 +246,7 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 	//先更新数据库
 	MysqlMgr::GetInstance()->AddFriendApply(uid, touid);
 
-	//查询redis 查找touid对应的server ip
+	//查询redis，查找touid对应的server ip
 	auto to_str = std::to_string(touid);
 	auto to_ip_key = USERIPPREFIX + to_str;
 	std::string to_ip_value = "";
@@ -272,16 +255,14 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 		return;
 	}
 
-
 	auto& cfg = ConfigMgr::Inst();
 	auto self_name = cfg["SelfServer"]["Name"];
-
 
 	std::string base_key = USER_BASE_INFO + std::to_string(uid);
 	auto apply_info = std::make_shared<UserInfo>();
 	bool b_info = GetBaseInfo(base_key, uid, apply_info);
 
-	//直接通知对方有申请消息
+	//对方与自己同处一个服务器，直接通知对方有申请消息
 	if (to_ip_value == self_name) {
 		auto session = UserMgr::GetInstance()->GetSession(touid);
 		if (session) {
@@ -303,7 +284,7 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 		return ;
 	}
 
-	
+	//不同服务器
 	AddFriendReq add_req;
 	add_req.set_applyuid(uid);
 	add_req.set_touid(touid);
@@ -317,7 +298,6 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 
 	//发送通知
 	ChatGrpcClient::GetInstance()->NotifyAddFriend(to_ip_value,add_req);
-
 }
 
 void LogicSystem::AuthFriendApply(std::shared_ptr<CSession> session, const short& msg_id, const string& msg_data) {
@@ -621,7 +601,7 @@ void LogicSystem::GetUserByName(std::string name, Json::Value& rtvalue)
 
 bool LogicSystem::GetBaseInfo(std::string base_key, int uid, std::shared_ptr<UserInfo>& userinfo)
 {
-	//优先查redis中查询用户信息
+	//优先在redis中查询用户信息
 	std::string info_str = "";
 	bool b_base = RedisMgr::GetInstance()->Get(base_key, info_str);
 	if (b_base) {
@@ -639,9 +619,7 @@ bool LogicSystem::GetBaseInfo(std::string base_key, int uid, std::shared_ptr<Use
 		std::cout << "user login uid is  " << userinfo->uid << " name  is "
 			<< userinfo->name << " pwd is " << userinfo->pwd << " email is " << userinfo->email << endl;
 	}
-	else {
-		//redis中没有则查询mysql
-		//查询数据库
+	else {//redis中没有则查mysql
 		std::shared_ptr<UserInfo> user_info = nullptr;
 		user_info = MysqlMgr::GetInstance()->GetUser(uid);
 		if (user_info == nullptr) {
@@ -649,8 +627,7 @@ bool LogicSystem::GetBaseInfo(std::string base_key, int uid, std::shared_ptr<Use
 		}
 
 		userinfo = user_info;
-
-		//将数据库内容写入redis缓存
+		//将数据库查到的内容写入redis缓存
 		Json::Value redis_root;
 		redis_root["uid"] = uid;
 		redis_root["pwd"] = userinfo->pwd;
@@ -672,6 +649,6 @@ bool LogicSystem::GetFriendApplyInfo(int to_uid, std::vector<std::shared_ptr<App
 }
 
 bool LogicSystem::GetFriendList(int self_id, std::vector<std::shared_ptr<UserInfo>>& user_list) {
-	//从mysql获取好友列表
+	//获取好友列表
 	return MysqlMgr::GetInstance()->GetFriendList(self_id, user_list);
 }

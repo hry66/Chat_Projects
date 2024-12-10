@@ -5,12 +5,13 @@
 #include "findsuccessdlg.h"
 #include "tcpmgr.h"
 #include "customizeedit.h"
-//#include "findfaildlg.h"
+#include "findfaildlg.h"
 #include "loadingdlg.h"
 #include "userdata.h"
 #include "usermgr.h"
+#include<QJsonDocument>
 
-SearchList::SearchList(QWidget *parent):QListWidget(parent),_find_dlg(nullptr), _search_edit(nullptr), _send_pending(false)
+SearchList::SearchList(QWidget *parent):QListWidget(parent), _send_pending(false), _find_dlg(nullptr), _search_edit(nullptr)
 {
     Q_UNUSED(parent);
      this->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -35,12 +36,21 @@ void SearchList::CloseFindDlg()
 
 void SearchList::SetSearchEdit(QWidget *edit)
 {
-
+    _search_edit=edit;
 }
 
 void SearchList::waitPending(bool pending)
 {
-
+    if(pending){
+        _loadingDialog = new LoadingDlg(this);
+        _loadingDialog->setModal(true);
+        _loadingDialog->show();
+        _send_pending = pending;
+    }else{
+        _loadingDialog->hide();
+        _loadingDialog->deleteLater();
+        _send_pending = pending;
+    }
 }
 
 void SearchList::addTipItem()
@@ -86,11 +96,27 @@ void SearchList::slot_item_clicked(QListWidgetItem *item)
 
     if(itemType==ListItemType::ADD_USER_TIP_ITEM){
         //todo
-        _find_dlg = std::make_shared<FindSuccessDlg>(this);
-        auto si = std::make_shared<SearchInfo>(0,"black","heiren","hello",1);
-        std::dynamic_pointer_cast<FindSuccessDlg>(_find_dlg)->SetSearchInfo(si);
+        if(_send_pending){
+            return;
+        }
 
-        _find_dlg->show();
+        if(!_search_edit){
+            return;
+        }
+
+        waitPending(true);
+
+        auto search_edit = dynamic_cast<CustomizeEdit*>(_search_edit);
+        auto uid_str = search_edit->text();
+
+        QJsonObject jsonObj;
+        jsonObj["uid"] = uid_str;
+
+        QJsonDocument doc(jsonObj);
+        QByteArray jsonData = doc.toJson(QJsonDocument::Compact);
+
+        emit TcpMgr::GetInstance()->sig_send_data(ReqId::ID_SEARCH_USER_REQ,jsonData);
+
         return;
     }
 
@@ -101,5 +127,16 @@ void SearchList::slot_item_clicked(QListWidgetItem *item)
 
 void SearchList::slot_user_search(std::shared_ptr<SearchInfo> si)
 {
+    waitPending(false);
+    if(si == nullptr){
+        _find_dlg = std::make_shared<FindFailDlg>(this);
+    }else{
+        //此处有两种情况
+        //1.未添加好友
+        _find_dlg = std::make_shared<FindSuccessDlg>(this);
+        std::dynamic_pointer_cast<FindSuccessDlg>(_find_dlg)->SetSearchInfo(si);
+        //2.搜索到已经是好友  todo...
+    }
 
+    _find_dlg->show();
 }

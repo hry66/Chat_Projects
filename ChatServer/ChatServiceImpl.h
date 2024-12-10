@@ -25,6 +25,7 @@ class ChatServiceImpl final: public ChatService::Service
 {
 public:
 	ChatServiceImpl();
+
 	Status NotifyAddFriend(ServerContext* context, const AddFriendReq* request,
 		AddFriendRsp* reply) override;
 

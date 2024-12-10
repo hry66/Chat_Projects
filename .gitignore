@@ -2,4 +2,5 @@ other/
 build-hry_chat-Qt5_12_8-Debug/
 hry_chat/res/
 hry_chat/.qtc_clangd/
+hry_chat/.vs/
 ChatServer/.vs/

@@ -180,7 +180,7 @@ bool MysqlDao::AddFriendApply(const int& from, const int& to)
 	try {
 		// 准备SQL语句
 		std::unique_ptr<sql::PreparedStatement> pstmt(con->_con->prepareStatement("INSERT INTO friend_apply (from_uid, to_uid) values (?,?) "
-			"ON DUPLICATE KEY UPDATE from_uid = from_uid, to_uid = to_uid"));
+			"ON DUPLICATE KEY UPDATE from_uid = from_uid, to_uid = to_uid "));
 		pstmt->setInt(1, from); // from id
 		pstmt->setInt(2, to);
 		// 执行更新
@@ -196,7 +196,6 @@ bool MysqlDao::AddFriendApply(const int& from, const int& to)
 		std::cerr << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		return false;
 	}
-
 
 	return true;
 }

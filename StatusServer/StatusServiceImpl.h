@@ -46,6 +46,5 @@ private:
 	ChatServer getChatServer();
 	std::unordered_map<std::string, ChatServer> _servers;
 	std::mutex _server_mtx;
-
 };
 
