@@ -95,18 +95,11 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	auto token = root["token"].asString();
 	std::cout << "user login uid is " << uid << " user token  is "<< token << endl;
 
-	//auto rsp = StatusGrpcClient::GetInstance()->Login(uid, token);
-
 	Json::Value rtvalue;
 	Defer defer([this, &rtvalue, session]() {
 		std::string return_str = rtvalue.toStyledString();
 		session->Send(return_str, MSG_CHAT_LOGIN_RSP);
 	});
-
-	//rtvalue["error"] = rsp.error();
-	//if (rsp.error() != ErrorCodes::Success) {
-	//	return;
-	//}
 
 	//从redis获取用户token是否正确
 	std::string uid_str = std::to_string(uid);
@@ -142,22 +135,22 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	rtvalue["sex"] = user_info->sex;
 	rtvalue["icon"] = user_info->icon;
 
-	////从数据库获取申请列表
-	//std::vector<std::shared_ptr<ApplyInfo>> apply_list;
-	//auto b_apply = GetFriendApplyInfo(uid,apply_list);
-	//if (b_apply) {
-	//	for (auto & apply : apply_list) {
-	//		Json::Value obj;
-	//		obj["name"] = apply->_name;
-	//		obj["uid"] = apply->_uid;
-	//		obj["icon"] = apply->_icon;
-	//		obj["nick"] = apply->_nick;
-	//		obj["sex"] = apply->_sex;
-	//		obj["desc"] = apply->_desc;
-	//		obj["status"] = apply->_status;
-	//		rtvalue["apply_list"].append(obj);
-	//	}
-	//}
+	//从数据库获取申请列表
+	std::vector<std::shared_ptr<ApplyInfo>> apply_list;
+	auto b_apply = GetFriendApplyInfo(uid,apply_list);
+	if (b_apply) {
+		for (auto & apply : apply_list) {
+			Json::Value obj;
+			obj["name"] = apply->_name;
+			obj["uid"] = apply->_uid;
+			obj["icon"] = apply->_icon;
+			obj["nick"] = apply->_nick;
+			obj["sex"] = apply->_sex;
+			obj["desc"] = apply->_desc;
+			obj["status"] = apply->_status;
+			rtvalue["apply_list"].append(obj);
+		}
+	}
 
 	////获取好友列表
 	//std::vector<std::shared_ptr<UserInfo>> friend_list;
@@ -246,7 +239,7 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 	//先更新数据库
 	MysqlMgr::GetInstance()->AddFriendApply(uid, touid);
 
-	//查询redis 查找touid对应的server ip
+	//查询redis，查找touid对应的server ip
 	auto to_str = std::to_string(touid);
 	auto to_ip_key = USERIPPREFIX + to_str;
 	std::string to_ip_value = "";
@@ -255,16 +248,14 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 		return;
 	}
 
-
 	auto& cfg = ConfigMgr::Inst();
 	auto self_name = cfg["SelfServer"]["Name"];
-
 
 	std::string base_key = USER_BASE_INFO + std::to_string(uid);
 	auto apply_info = std::make_shared<UserInfo>();
 	bool b_info = GetBaseInfo(base_key, uid, apply_info);
 
-	//直接通知对方有申请消息
+	//对方与自己同处一个服务器，直接通知对方有申请消息
 	if (to_ip_value == self_name) {
 		auto session = UserMgr::GetInstance()->GetSession(touid);
 		if (session) {
@@ -286,7 +277,7 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 		return ;
 	}
 
-	
+	//不同服务器
 	AddFriendReq add_req;
 	add_req.set_applyuid(uid);
 	add_req.set_touid(touid);
@@ -300,7 +291,6 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 
 	//发送通知
 	ChatGrpcClient::GetInstance()->NotifyAddFriend(to_ip_value,add_req);
-
 }
 
 void LogicSystem::AuthFriendApply(std::shared_ptr<CSession> session, const short& msg_id, const string& msg_data) {

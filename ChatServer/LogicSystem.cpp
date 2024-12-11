@@ -95,18 +95,11 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	auto token = root["token"].asString();
 	std::cout << "user login uid is " << uid << " user token  is "<< token << endl;
 
-	//auto rsp = StatusGrpcClient::GetInstance()->Login(uid, token);
-
 	Json::Value rtvalue;
 	Defer defer([this, &rtvalue, session]() {
 		std::string return_str = rtvalue.toStyledString();
 		session->Send(return_str, MSG_CHAT_LOGIN_RSP);
 	});
-
-	//rtvalue["error"] = rsp.error();
-	//if (rsp.error() != ErrorCodes::Success) {
-	//	return;
-	//}
 
 	//从redis获取用户token是否正确
 	std::string uid_str = std::to_string(uid);
@@ -142,22 +135,22 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	rtvalue["sex"] = user_info->sex;
 	rtvalue["icon"] = user_info->icon;
 
-	////从数据库获取申请列表
-	//std::vector<std::shared_ptr<ApplyInfo>> apply_list;
-	//auto b_apply = GetFriendApplyInfo(uid,apply_list);
-	//if (b_apply) {
-	//	for (auto & apply : apply_list) {
-	//		Json::Value obj;
-	//		obj["name"] = apply->_name;
-	//		obj["uid"] = apply->_uid;
-	//		obj["icon"] = apply->_icon;
-	//		obj["nick"] = apply->_nick;
-	//		obj["sex"] = apply->_sex;
-	//		obj["desc"] = apply->_desc;
-	//		obj["status"] = apply->_status;
-	//		rtvalue["apply_list"].append(obj);
-	//	}
-	//}
+	//从数据库获取申请列表
+	std::vector<std::shared_ptr<ApplyInfo>> apply_list;
+	auto b_apply = GetFriendApplyInfo(uid,apply_list);
+	if (b_apply) {
+		for (auto & apply : apply_list) {
+			Json::Value obj;
+			obj["name"] = apply->_name;
+			obj["uid"] = apply->_uid;
+			obj["icon"] = apply->_icon;
+			obj["nick"] = apply->_nick;
+			obj["sex"] = apply->_sex;
+			obj["desc"] = apply->_desc;
+			obj["status"] = apply->_status;
+			rtvalue["apply_list"].append(obj);
+		}
+	}
 
 	////获取好友列表
 	//std::vector<std::shared_ptr<UserInfo>> friend_list;

@@ -72,6 +72,9 @@
     <ClCompile Include="applyfriendpage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="authenfriend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="bubbleframe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -109,6 +112,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="customizeedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="findfaildlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="findsuccessdlg.cpp">
@@ -174,9 +180,6 @@
     <ClCompile Include="usermgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="findfaildlg.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="adduseritem.h">
@@ -192,6 +195,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="applyfriendpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="authenfriend.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="bubbleframe.h">
@@ -231,6 +237,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="customizeedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="findfaildlg.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="findsuccessdlg.h">
@@ -296,9 +305,6 @@
     <QtMoc Include="usermgr.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="findfaildlg.h">
-      <Filter>Generated Files</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
@@ -321,6 +327,9 @@
     <QtUic Include="applyfriendpage.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="authenfriend.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
     <QtUic Include="chatdialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
@@ -331,6 +340,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="conuseritem.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="findfaildlg.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="findsuccessdlg.ui">
@@ -355,9 +367,6 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="resetdialog.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-    <QtUic Include="findfaildlg.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

@@ -133,9 +133,19 @@ void TcpMgr::initHandlers()
             return;
         }
 
-        UserMgr::GetInstance()->SetUid(jsonObj["uid"].toInt());
-        UserMgr::GetInstance()->SetName(jsonObj["name"].toString());
-        UserMgr::GetInstance()->SetToken(jsonObj["token"].toString());
+        auto uid = jsonObj["uid"].toInt();
+        auto name = jsonObj["name"].toString();
+        auto nick = jsonObj["nick"].toString();
+        auto icon = jsonObj["icon"].toString();
+        auto sex = jsonObj["sex"].toInt();
+        auto token = jsonObj["token"].toString();
+        auto user_info = std::make_shared<UserInfo>(uid,name,nick,icon,sex);
+        UserMgr::GetInstance()->setUserInfo(user_info);
+        UserMgr::GetInstance()->SetToken(token);
+
+        if(jsonObj.contains("apply_list")){
+            UserMgr::GetInstance()->AppendApplyList(jsonObj["apply_list"].toArray());
+        }
 
         emit sig_switch_chatdlg();
     });

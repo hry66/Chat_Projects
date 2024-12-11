@@ -398,8 +398,9 @@ bool MysqlDao::GetApplyList(int touid, std::vector<std::shared_ptr<ApplyInfo>>& 
 
 		try {
 		// 准备SQL语句, 根据起始id和限制条数返回列表
-		std::unique_ptr<sql::PreparedStatement> pstmt(con->_con->prepareStatement("select apply.from_uid, apply.status, user.name, "
-				"user.nick, user.sex from friend_apply as apply join user on apply.from_uid = user.uid where apply.to_uid = ? "
+		std::unique_ptr<sql::PreparedStatement> pstmt(con->_con->prepareStatement(
+			"select apply.from_uid, apply.status, user.name, "
+			"user.nick, user.sex from friend_apply as apply join user on apply.from_uid = user.uid where apply.to_uid = ? "
 			"and apply.id > ? order by apply.id ASC LIMIT ? "));
 
 		pstmt->setInt(1, touid); // 将uid替换为你要查询的uid
