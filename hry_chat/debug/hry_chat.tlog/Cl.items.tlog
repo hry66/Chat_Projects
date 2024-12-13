@@ -3,6 +3,7 @@ D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriend.cpp;D:\CPPstudy\lianlianf
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfrienditem.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\applyfrienditem.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriendlist.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\applyfriendlist.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\applyfriendpage.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\applyfriendpage.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\authenfriend.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\authenfriend.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\bubbleframe.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\bubbleframe.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\chatdialog.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\chatdialog.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\chatitembase.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\chatitembase.obj
@@ -60,6 +61,7 @@ D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_customizeedit.cpp;D:\CPPstu
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_findsuccessdlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_findsuccessdlg.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_friendlabel.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_friendlabel.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_findfaildlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_findfaildlg.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_authenfriend.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_authenfriend.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_grouptipitem.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_grouptipitem.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_httpmgr.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_httpmgr.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_listitembase.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_listitembase.obj

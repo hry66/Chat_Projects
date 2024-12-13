@@ -714,21 +714,6 @@ ApplyFriendItem #addBtn[state='press'] {
    border-radius: 20px; /* 设置圆角 */
 }
 
-
-
-/* ############################################################################################
-
-
-
-
-#invalid_item {
-    background-color: #eaeaea;
-    border: none;
-}
-
-
-
-
 #AuthenFriend {
     border: 2px solid #f1f1f1;
     font-size: 14px;
@@ -739,6 +724,15 @@ ApplyFriendItem #addBtn[state='press'] {
     border-image: url(:/res/red_point.png);
 }
 
+/* ############################################################################################
+
+
+
+
+#invalid_item {
+    background-color: #eaeaea;
+    border: none;
+}
 
 
 #friend_info_page #name_lb {

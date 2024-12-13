@@ -12,6 +12,9 @@ class ChatUserList: public QListWidget
 public:
     ChatUserList(QWidget *parent = nullptr);
 
+private:
+    bool _load_pending;
+
 protected:
     bool eventFilter(QObject *watched, QEvent *event) override;
 

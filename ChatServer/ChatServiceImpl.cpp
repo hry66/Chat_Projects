@@ -151,7 +151,6 @@ bool ChatServiceImpl::GetBaseInfo(std::string base_key, int uid, std::shared_ptr
 		if (user_info == nullptr) {
 			return false;
 		}
-
 		userinfo = user_info;
 
 		//将数据库内容写入redis缓存

@@ -79,8 +79,8 @@ void LogicSystem::RegisterCallBacks() {
 	_fun_callbacks[ID_ADD_FRIEND_REQ] = std::bind(&LogicSystem::AddFriendApply, this,
 		placeholders::_1, placeholders::_2, placeholders::_3);
 
-	//_fun_callbacks[ID_AUTH_FRIEND_REQ] = std::bind(&LogicSystem::AuthFriendApply, this,
-	//	placeholders::_1, placeholders::_2, placeholders::_3);
+	_fun_callbacks[ID_AUTH_FRIEND_REQ] = std::bind(&LogicSystem::AuthFriendApply, this,
+		placeholders::_1, placeholders::_2, placeholders::_3);
 
 	//_fun_callbacks[ID_TEXT_CHAT_MSG_REQ] = std::bind(&LogicSystem::DealChatTextMsg, this,
 	//	placeholders::_1, placeholders::_2, placeholders::_3);
@@ -142,37 +142,37 @@ void LogicSystem::LoginHandler(shared_ptr<CSession> session, const short &msg_id
 	rtvalue["sex"] = user_info->sex;
 	rtvalue["icon"] = user_info->icon;
 
-	////从数据库获取申请列表
-	//std::vector<std::shared_ptr<ApplyInfo>> apply_list;
-	//auto b_apply = GetFriendApplyInfo(uid,apply_list);
-	//if (b_apply) {
-	//	for (auto & apply : apply_list) {
-	//		Json::Value obj;
-	//		obj["name"] = apply->_name;
-	//		obj["uid"] = apply->_uid;
-	//		obj["icon"] = apply->_icon;
-	//		obj["nick"] = apply->_nick;
-	//		obj["sex"] = apply->_sex;
-	//		obj["desc"] = apply->_desc;
-	//		obj["status"] = apply->_status;
-	//		rtvalue["apply_list"].append(obj);
-	//	}
-	//}
+	//从数据库获取申请列表
+	std::vector<std::shared_ptr<ApplyInfo>> apply_list;
+	auto b_apply = GetFriendApplyInfo(uid,apply_list);
+	if (b_apply) {
+		for (auto & apply : apply_list) {
+			Json::Value obj;
+			obj["name"] = apply->_name;
+			obj["uid"] = apply->_uid;
+			obj["icon"] = apply->_icon;
+			obj["nick"] = apply->_nick;
+			obj["sex"] = apply->_sex;
+			obj["desc"] = apply->_desc;
+			obj["status"] = apply->_status;
+			rtvalue["apply_list"].append(obj);
+		}
+	}
 
-	////获取好友列表
-	//std::vector<std::shared_ptr<UserInfo>> friend_list;
-	//bool b_friend_list = GetFriendList(uid, friend_list);
-	//for (auto& friend_ele : friend_list) {
-	//	Json::Value obj;
-	//	obj["name"] = friend_ele->name;
-	//	obj["uid"] = friend_ele->uid;
-	//	obj["icon"] = friend_ele->icon;
-	//	obj["nick"] = friend_ele->nick;
-	//	obj["sex"] = friend_ele->sex;
-	//	obj["desc"] = friend_ele->desc;
-	//	obj["back"] = friend_ele->back;
-	//	rtvalue["friend_list"].append(obj);
-	//}
+	//获取好友列表
+	std::vector<std::shared_ptr<UserInfo>> friend_list;
+	bool b_friend_list = GetFriendList(uid, friend_list);
+	for (auto& friend_ele : friend_list) {
+		Json::Value obj;
+		obj["name"] = friend_ele->name;
+		obj["uid"] = friend_ele->uid;
+		obj["icon"] = friend_ele->icon;
+		obj["nick"] = friend_ele->nick;
+		obj["sex"] = friend_ele->sex;
+		obj["desc"] = friend_ele->desc;
+		obj["back"] = friend_ele->back;
+		rtvalue["friend_list"].append(obj);
+	}
 
 	auto server_name = ConfigMgr::Inst().GetValue("SelfServer", "Name");
 	//将登录数量增加
@@ -246,7 +246,7 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 	//先更新数据库
 	MysqlMgr::GetInstance()->AddFriendApply(uid, touid);
 
-	//查询redis 查找touid对应的server ip
+	//查询redis，查找touid对应的server ip
 	auto to_str = std::to_string(touid);
 	auto to_ip_key = USERIPPREFIX + to_str;
 	std::string to_ip_value = "";
@@ -255,16 +255,14 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 		return;
 	}
 
-
 	auto& cfg = ConfigMgr::Inst();
 	auto self_name = cfg["SelfServer"]["Name"];
-
 
 	std::string base_key = USER_BASE_INFO + std::to_string(uid);
 	auto apply_info = std::make_shared<UserInfo>();
 	bool b_info = GetBaseInfo(base_key, uid, apply_info);
 
-	//直接通知对方有申请消息
+	//对方与自己同处一个服务器，直接通知对方有申请消息
 	if (to_ip_value == self_name) {
 		auto session = UserMgr::GetInstance()->GetSession(touid);
 		if (session) {
@@ -286,7 +284,7 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 		return ;
 	}
 
-	
+	//不同服务器
 	AddFriendReq add_req;
 	add_req.set_applyuid(uid);
 	add_req.set_touid(touid);
@@ -300,7 +298,6 @@ void LogicSystem::AddFriendApply(std::shared_ptr<CSession> session, const short&
 
 	//发送通知
 	ChatGrpcClient::GetInstance()->NotifyAddFriend(to_ip_value,add_req);
-
 }
 
 void LogicSystem::AuthFriendApply(std::shared_ptr<CSession> session, const short& msg_id, const string& msg_data) {
@@ -383,7 +380,6 @@ void LogicSystem::AuthFriendApply(std::shared_ptr<CSession> session, const short
 
 		return ;
 	}
-
 
 	AuthFriendReq auth_req;
 	auth_req.set_fromuid(uid);

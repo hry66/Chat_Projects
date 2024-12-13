@@ -16,7 +16,7 @@ ApplyFriend::ApplyFriend(QWidget *parent) :
     setWindowFlags(windowFlags() | Qt::FramelessWindowHint);
     this->setObjectName("ApplyFriend");
     this->setModal(true);
-    ui->name_ed->setPlaceholderText(tr("嘿人"));
+    ui->name_ed->setPlaceholderText(tr("发送申请"));
     ui->lb_ed->setPlaceholderText("搜索、添加标签");
     ui->back_ed->setPlaceholderText("hry66");
 

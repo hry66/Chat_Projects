@@ -10,6 +10,7 @@
 #include "userdata.h"
 #include "usermgr.h"
 #include<QJsonDocument>
+#include"usermgr.h"
 
 SearchList::SearchList(QWidget *parent):QListWidget(parent), _send_pending(false), _find_dlg(nullptr), _search_edit(nullptr)
 {
@@ -131,11 +132,26 @@ void SearchList::slot_user_search(std::shared_ptr<SearchInfo> si)
     if(si == nullptr){
         _find_dlg = std::make_shared<FindFailDlg>(this);
     }else{
-        //此处有两种情况
-        //1.未添加好友
+        //此处有三种情况
+        //1.查找的是自己，直接返回
+        auto self_uid = UserMgr::GetInstance()->GetUid();
+        if(si->_uid == self_uid){
+            return;
+        }
+
+        //2.已经是好友，实现页面跳转
+        bool bExist = UserMgr::GetInstance()->CheckFriendById(si->_uid);
+        if(bExist){
+            //跳转到聊天界面指定的item中
+            emit sig_jump_chat_item(si);
+            return;
+        }
+
+        //3.未添加好友
         _find_dlg = std::make_shared<FindSuccessDlg>(this);
         std::dynamic_pointer_cast<FindSuccessDlg>(_find_dlg)->SetSearchInfo(si);
-        //2.搜索到已经是好友  todo...
+
+
     }
 
     _find_dlg->show();

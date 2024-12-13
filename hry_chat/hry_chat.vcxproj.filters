@@ -177,6 +177,9 @@
     <ClCompile Include="findfaildlg.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="authenfriend.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="adduseritem.h">
@@ -299,6 +302,9 @@
     <QtMoc Include="findfaildlg.h">
       <Filter>Generated Files</Filter>
     </QtMoc>
+    <QtMoc Include="authenfriend.h">
+      <Filter>Generated Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">
@@ -358,6 +364,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="findfaildlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="authenfriend.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

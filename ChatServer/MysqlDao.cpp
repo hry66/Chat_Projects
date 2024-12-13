@@ -231,7 +231,6 @@ bool MysqlDao::AuthFriendApply(const int& from, const int& to) {
 		return false;
 	}
 
-
 	return true;
 }
 
@@ -296,7 +295,6 @@ bool MysqlDao::AddFriend(const int& from, const int& to, std::string back_name) 
 		std::cerr << ", SQLState: " << e.getSQLState() << " )" << std::endl;
 		return false;
 	}
-
 
 	return true;
 }
