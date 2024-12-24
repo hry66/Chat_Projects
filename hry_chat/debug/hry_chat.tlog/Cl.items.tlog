@@ -19,6 +19,7 @@ D:\CPPstudy\lianlianfengchen-copy\hry_chat\conuseritem.cpp;D:\CPPstudy\lianlianf
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\customizeedit.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\customizeedit.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\findfaildlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\findfaildlg.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\findsuccessdlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\findsuccessdlg.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\friendinfopage.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\friendinfopage.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\friendlabel.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\friendlabel.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\global.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\global.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\grouptipitem.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\grouptipitem.obj
@@ -45,12 +46,11 @@ D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_applyfriend.cpp;D:\CPPstudy
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_applyfrienditem.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_applyfrienditem.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_applyfriendlist.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_applyfriendlist.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_applyfriendpage.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_applyfriendpage.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_authenfriend.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_authenfriend.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_bubbleframe.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_bubbleframe.obj
-D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatdialog.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatdialog.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatitembase.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatitembase.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatpage.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatpage.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatuserlist.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatuserlist.obj
-D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatuserwid.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatuserwid.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatview.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatview.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_clickedbtn.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_clickedbtn.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_clickedlabel.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_clickedlabel.obj
@@ -58,10 +58,10 @@ D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_clickedoncelabel.cpp;D:\CPP
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_contactuserlist.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_contactuserlist.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_conuseritem.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_conuseritem.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_customizeedit.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_customizeedit.obj
-D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_findsuccessdlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_findsuccessdlg.obj
-D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_friendlabel.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_friendlabel.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_findfaildlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_findfaildlg.obj
-D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_authenfriend.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_authenfriend.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_findsuccessdlg.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_findsuccessdlg.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_friendinfopage.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_friendinfopage.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_friendlabel.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_friendlabel.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_grouptipitem.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_grouptipitem.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_httpmgr.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_httpmgr.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_listitembase.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_listitembase.obj
@@ -74,6 +74,8 @@ D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_registerdialog.cpp;D:\CPPst
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_resetdialog.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_resetdialog.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_searchlist.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_searchlist.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_statewidget.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_statewidget.obj
-D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_tcpmgr.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_tcpmgr.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_textbubble.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_textbubble.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatdialog.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatdialog.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_chatuserwid.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_chatuserwid.obj
+D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_tcpmgr.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_tcpmgr.obj
 D:\CPPstudy\lianlianfengchen-copy\hry_chat\Debug\moc_usermgr.cpp;D:\CPPstudy\lianlianfengchen-copy\hry_chat\debug\moc_usermgr.obj

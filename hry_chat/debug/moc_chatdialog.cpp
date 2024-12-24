@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ChatDialog_t {
-    QByteArrayData data[20];
-    char stringdata0[326];
+    QByteArrayData data[34];
+    char stringdata0[604];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -50,7 +50,21 @@ QT_MOC_LITERAL(15, 241, 24), // "std::shared_ptr<AuthRsp>"
 QT_MOC_LITERAL(16, 266, 8), // "auth_rsp"
 QT_MOC_LITERAL(17, 275, 19), // "slot_jump_chat_item"
 QT_MOC_LITERAL(18, 295, 27), // "std::shared_ptr<SearchInfo>"
-QT_MOC_LITERAL(19, 323, 2) // "si"
+QT_MOC_LITERAL(19, 323, 2), // "si"
+QT_MOC_LITERAL(20, 326, 21), // "slot_friend_info_page"
+QT_MOC_LITERAL(21, 348, 25), // "std::shared_ptr<UserInfo>"
+QT_MOC_LITERAL(22, 374, 9), // "user_info"
+QT_MOC_LITERAL(23, 384, 29), // "slot_switch_apply_friend_page"
+QT_MOC_LITERAL(24, 414, 33), // "slot_jump_chat_item_from_info..."
+QT_MOC_LITERAL(25, 448, 17), // "slot_item_clicked"
+QT_MOC_LITERAL(26, 466, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(27, 483, 4), // "item"
+QT_MOC_LITERAL(28, 488, 25), // "slot_append_send_chat_msg"
+QT_MOC_LITERAL(29, 514, 29), // "std::shared_ptr<TextChatData>"
+QT_MOC_LITERAL(30, 544, 7), // "msgdata"
+QT_MOC_LITERAL(31, 552, 18), // "slot_text_chat_msg"
+QT_MOC_LITERAL(32, 571, 28), // "std::shared_ptr<TextChatMsg>"
+QT_MOC_LITERAL(33, 600, 3) // "msg"
 
     },
     "ChatDialog\0slot_loading_chat_user\0\0"
@@ -61,7 +75,15 @@ QT_MOC_LITERAL(19, 323, 2) // "si"
     "std::shared_ptr<AuthInfo>\0auth_info\0"
     "slot_auth_rsp\0std::shared_ptr<AuthRsp>\0"
     "auth_rsp\0slot_jump_chat_item\0"
-    "std::shared_ptr<SearchInfo>\0si"
+    "std::shared_ptr<SearchInfo>\0si\0"
+    "slot_friend_info_page\0std::shared_ptr<UserInfo>\0"
+    "user_info\0slot_switch_apply_friend_page\0"
+    "slot_jump_chat_item_from_infopage\0"
+    "slot_item_clicked\0QListWidgetItem*\0"
+    "item\0slot_append_send_chat_msg\0"
+    "std::shared_ptr<TextChatData>\0msgdata\0"
+    "slot_text_chat_msg\0std::shared_ptr<TextChatMsg>\0"
+    "msg"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,7 +93,7 @@ static const uint qt_meta_data_ChatDialog[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      15,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -79,15 +101,21 @@ static const uint qt_meta_data_ChatDialog[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x08 /* Private */,
-       3,    0,   60,    2, 0x08 /* Private */,
-       4,    0,   61,    2, 0x08 /* Private */,
-       5,    0,   62,    2, 0x08 /* Private */,
-       6,    1,   63,    2, 0x08 /* Private */,
-       8,    1,   66,    2, 0x0a /* Public */,
-      11,    1,   69,    2, 0x0a /* Public */,
-      14,    1,   72,    2, 0x0a /* Public */,
-      17,    1,   75,    2, 0x0a /* Public */,
+       1,    0,   89,    2, 0x08 /* Private */,
+       3,    0,   90,    2, 0x08 /* Private */,
+       4,    0,   91,    2, 0x08 /* Private */,
+       5,    0,   92,    2, 0x08 /* Private */,
+       6,    1,   93,    2, 0x08 /* Private */,
+       8,    1,   96,    2, 0x0a /* Public */,
+      11,    1,   99,    2, 0x0a /* Public */,
+      14,    1,  102,    2, 0x0a /* Public */,
+      17,    1,  105,    2, 0x0a /* Public */,
+      20,    1,  108,    2, 0x0a /* Public */,
+      23,    0,  111,    2, 0x0a /* Public */,
+      24,    1,  112,    2, 0x0a /* Public */,
+      25,    1,  115,    2, 0x0a /* Public */,
+      28,    1,  118,    2, 0x0a /* Public */,
+      31,    1,  121,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -99,6 +127,12 @@ static const uint qt_meta_data_ChatDialog[] = {
     QMetaType::Void, 0x80000000 | 12,   13,
     QMetaType::Void, 0x80000000 | 15,   16,
     QMetaType::Void, 0x80000000 | 18,   19,
+    QMetaType::Void, 0x80000000 | 21,   22,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 21,   22,
+    QMetaType::Void, 0x80000000 | 26,   27,
+    QMetaType::Void, 0x80000000 | 29,   30,
+    QMetaType::Void, 0x80000000 | 32,   33,
 
        0        // eod
 };
@@ -118,6 +152,12 @@ void ChatDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->slot_add_auth_friend((*reinterpret_cast< std::shared_ptr<AuthInfo>(*)>(_a[1]))); break;
         case 7: _t->slot_auth_rsp((*reinterpret_cast< std::shared_ptr<AuthRsp>(*)>(_a[1]))); break;
         case 8: _t->slot_jump_chat_item((*reinterpret_cast< std::shared_ptr<SearchInfo>(*)>(_a[1]))); break;
+        case 9: _t->slot_friend_info_page((*reinterpret_cast< std::shared_ptr<UserInfo>(*)>(_a[1]))); break;
+        case 10: _t->slot_switch_apply_friend_page(); break;
+        case 11: _t->slot_jump_chat_item_from_infopage((*reinterpret_cast< std::shared_ptr<UserInfo>(*)>(_a[1]))); break;
+        case 12: _t->slot_item_clicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 13: _t->slot_append_send_chat_msg((*reinterpret_cast< std::shared_ptr<TextChatData>(*)>(_a[1]))); break;
+        case 14: _t->slot_text_chat_msg((*reinterpret_cast< std::shared_ptr<TextChatMsg>(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -152,13 +192,13 @@ int ChatDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 15;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 15)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 9;
+        _id -= 15;
     }
     return _id;
 }

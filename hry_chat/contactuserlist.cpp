@@ -195,7 +195,7 @@ void ContactUserList::slot_item_clicked(QListWidgetItem *item)
        auto con_item = qobject_cast<ConUserItem*>(customItem);
        auto user_info = con_item->GetInfo();
        //跳转到好友申请界面
-       emit sig_switch_friend_info_page(/*user_info*/);
+       emit sig_switch_friend_info_page(user_info);
        return;
    }
 }
